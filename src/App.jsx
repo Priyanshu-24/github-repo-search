@@ -6,8 +6,8 @@ import { useState } from "react";
 const App = () => {
   const [repos, setRepos] = useState([]);
 
-  const searchQueriedRepos = (query) => {
-    getQueriedRepos(query).then((res) => {
+  const searchQueriedRepos = (query, sortValue) => {
+    getQueriedRepos(query, sortValue).then((res) => {
       setRepos(res?.data);
     });
   };
