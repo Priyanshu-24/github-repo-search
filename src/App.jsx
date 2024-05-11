@@ -13,8 +13,8 @@ const App = () => {
   };
 
   return (
-    <div>
-      <h1>Github Repo Search</h1>
+    <div className="container">
+      <div className="title">Github Repo Search</div>
       <Search onSearch={searchQueriedRepos} />
       <Repos repos={repos} />
     </div>

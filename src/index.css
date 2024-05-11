@@ -2,3 +2,123 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.container {
+  padding: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+  font-weight: bold;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.repo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.repo-card {
+  display: flex;
+  border: 0.05rem solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.repo-info {
+  flex-grow: 1;
+}
+
+.repo-name {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.stars,
+.description,
+.description-title,
+.language {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+}
+
+.stars,
+.language,
+.description-title {
+  font-weight: bold;
+}
+
+.stars {
+  color: #f0ad4e;
+}
+
+.description-title,
+.description {
+  color: #333;
+}
+
+.language {
+  color: #5bc0de;
+}
+
+.description-title {
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.search-form {
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 0.05rem solid #ccc;
+  border-radius: 0.2rem;
+  margin-right: 0.5rem;
+}
+
+.search-button {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.search-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.sort-container {
+  margin-bottom: 1rem;
+}
+
+.sort-label {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.sort-select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 0.05rem solid #ccc;
+  border-radius: 0.2rem;
+}

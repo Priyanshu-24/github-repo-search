@@ -1,11 +1,16 @@
 const RepoCard = ({ repo }) => {
   return (
-    <div>
-      <img src={repo?.owner?.avatar_url} alt="avatar" />
-      <h2>{repo?.name}</h2>
-      <p>Stars: {repo?.stargazers_count}</p>
-      <p>Description:{repo?.description}</p>
-      <p>Language: {repo?.language}</p>
+    <div className="repo-card">
+      <img src={repo?.owner?.avatar_url} alt="Avatar" className="avatar" />
+      <div className="repo-info">
+        <h2 className="repo-name">{repo?.name}</h2>
+        <p className="stars">Stars: {repo?.stargazers_count}</p>
+        <p className="language">Language: {repo?.language}</p>
+        <div>
+          <div className="description-title">Description:</div>
+          <div className="description">{repo?.description}</div>
+        </div>
+      </div>
     </div>
   );
 };

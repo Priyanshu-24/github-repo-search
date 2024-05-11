@@ -2,7 +2,7 @@ import RepoCard from "./RepoCard";
 
 const Repos = ({ repos }) => {
   return (
-    <div>
+    <div className="repo-container">
       {repos?.items?.map((repo) => (
         <RepoCard key={repo?.id} repo={repo} />
       ))}

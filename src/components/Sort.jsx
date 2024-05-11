@@ -10,9 +10,16 @@ const Sort = ({ sortBy, handleSortChange }) => {
   ];
 
   return (
-    <div>
-      <label htmlFor="sort">Sort By:</label>
-      <select id="sort" value={sortBy} onChange={handleSortChange}>
+    <div className="sort-container">
+      <label className="sort-label" htmlFor="sort">
+        Sort By:
+      </label>
+      <select
+        className="sort-select"
+        id="sort"
+        value={sortBy}
+        onChange={handleSortChange}
+      >
         {sortOptions.map((option) => (
           <option key={option?.value} value={option?.value}>
             {option?.label}

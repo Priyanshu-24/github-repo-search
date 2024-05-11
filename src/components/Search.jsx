@@ -21,18 +21,23 @@ const Search = ({ onSearch }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form className="search-form" onSubmit={handleSubmit}>
         <input
+          className="search-input"
           type="text"
           value={query}
           onChange={handleChange}
           placeholder="Search for repositories"
         />
-        <button type="submit" disabled={!query?.length}>
+        <button
+          className="search-button"
+          type="submit"
+          disabled={!query?.length}
+        >
           Search
         </button>
-        <Sort sortBy={sortValue} handleSortChange={handleSortChange} />
       </form>
+      <Sort sortBy={sortValue} handleSortChange={handleSortChange} />
     </>
   );
 };
