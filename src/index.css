@@ -17,7 +17,7 @@ body {
 
 .repo-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1rem;
   padding: 1rem;
 }
@@ -121,4 +121,17 @@ body {
   font-size: 1rem;
   border: 0.05rem solid #ccc;
   border-radius: 0.2rem;
+}
+
+.loading-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+
+.loading-title {
+  font-weight: bolder;
+  font-size: x-large;
 }

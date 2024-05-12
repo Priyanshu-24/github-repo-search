@@ -1,4 +1,4 @@
-const Sort = ({ sortBy, handleSortChange }) => {
+const Sort = ({ sortBy, handleSortChange, query }) => {
   const sortOptions = [
     { value: "", label: "---Select---" },
     { value: "stars", label: "Stars" },
@@ -17,6 +17,7 @@ const Sort = ({ sortBy, handleSortChange }) => {
       <select
         className="sort-select"
         id="sort"
+        disabled={!query?.length}
         value={sortBy}
         onChange={handleSortChange}
       >

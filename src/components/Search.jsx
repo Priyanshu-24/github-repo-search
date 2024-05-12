@@ -37,7 +37,11 @@ const Search = ({ onSearch }) => {
           Search
         </button>
       </form>
-      <Sort sortBy={sortValue} handleSortChange={handleSortChange} />
+      <Sort
+        sortBy={sortValue}
+        handleSortChange={handleSortChange}
+        query={query}
+      />
     </>
   );
 };
