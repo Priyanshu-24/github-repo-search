@@ -15,3 +15,7 @@
 
 - Add pagination as we have pagination API
 - Styling can be improved as I have focused more on functionality
+
+## Deployed On URL
+
+- https://priyanshu-github-repo-search.netlify.app
